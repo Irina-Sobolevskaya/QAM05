@@ -1,0 +1,241 @@
+{
+	"info": {
+		"_postman_id": "76916e5b-42e6-438d-b9a9-018d00751e81",
+		"name": "Example*",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "23969058"
+	},
+	"item": [
+		{
+			"name": "Create new user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"email\": \"mary_ivanova@mail.ru\",\n    \"name\": \"$schema\",\n    \"password\": \"mary2276\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/doregister",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"doregister"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create new user 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"ВЕСЫ 2022\",\n    \"email\": \"test2022@mail.com\",\n    \"tasks\": [\"проверка\", \"создание\"],\n    \"companies\": [\"Hirthe, Mitchell and Shields\", \"Иванов 6\", \"SOAP\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/createuser",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"createuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delite avatar",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://users.bugred.ru/tasks/rest/deleteavatar?email=test@tset.st4",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"tasks",
+						"rest",
+						"deleteavatar"
+					],
+					"query": [
+						{
+							"key": "email",
+							"value": "test@tset.st4"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcompany",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://users.bugred.ru/tasks//rest//getcompany?email owner=job1@mail.com&company_name=FirstCompany&company_type=typeCompany&company_users=userCompany&id_company=8",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"",
+						"tasks",
+						"",
+						"rest",
+						"",
+						"getcompany"
+					],
+					"query": [
+						{
+							"key": "email owner",
+							"value": "job1@mail.com"
+						},
+						{
+							"key": "company_name",
+							"value": "FirstCompany"
+						},
+						{
+							"key": "company_type",
+							"value": "typeCompany"
+						},
+						{
+							"key": "company_users",
+							"value": "userCompany"
+						},
+						{
+							"key": "id_company",
+							"value": "8"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcompany 2",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://users.bugred.ru/tasks//rest//getcompany?email owner=job1@mail.com&company_name=FirstCompany&company_type=typeCompany&company_users=userCompany&id_company=6",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"",
+						"tasks",
+						"",
+						"rest",
+						"",
+						"getcompany"
+					],
+					"query": [
+						{
+							"key": "email owner",
+							"value": "job1@mail.com"
+						},
+						{
+							"key": "company_name",
+							"value": "FirstCompany"
+						},
+						{
+							"key": "company_type",
+							"value": "typeCompany"
+						},
+						{
+							"key": "company_users",
+							"value": "userCompany"
+						},
+						{
+							"key": "id_company",
+							"value": "6"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getcompany 3",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://users.bugred.ru/tasks//rest//getcompany?email owner=job1@mail.com&company_name=FirstCompany&company_type=typeCompany&company_users=userCompany&id_company=7",
+					"protocol": "http",
+					"host": [
+						"users",
+						"bugred",
+						"ru"
+					],
+					"path": [
+						"",
+						"tasks",
+						"",
+						"rest",
+						"",
+						"getcompany"
+					],
+					"query": [
+						{
+							"key": "email owner",
+							"value": "job1@mail.com"
+						},
+						{
+							"key": "company_name",
+							"value": "FirstCompany"
+						},
+						{
+							"key": "company_type",
+							"value": "typeCompany"
+						},
+						{
+							"key": "company_users",
+							"value": "userCompany"
+						},
+						{
+							"key": "id_company",
+							"value": "7"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
